@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------navbar------ */
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url(image/bg4.jpg);
+    background-position: top;
+    Background-size: cover;
+    background-repeat: no-repeat;
+}
+.navBar{
+    width: 100%;
+    height: 10vh;
+	top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.navBar div img{
+    width: 70px;
+    margin-top: 6px;
+    margin-left: 80px;
+}
+.menu{
+    padding-bottom: 10px;
+}
+
+.menu ul{
+    display: flex;
+    text-align: right;
+    flex: 1;
+    margin-right: 50px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    margin-top: 10px;
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+.menu ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    padding: 160px 0;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.text-box h3{
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+.text-box h1{
+    font-size: 55px;
+    font-weight: 700;
+    margin: 30px 0 20 px 0;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+.text-box p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+.text-box a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.text-box .btn1{
+    background: #fff;
+    color: #000;
+}
+.text-box .btn2{
+    background: #f44336;
+    color: #fff;
+}
+.btn1:hover{
+    background: #f44336;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn2:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.places{
+    width: 84%;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+}
+.places h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.places-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.places-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;  
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.food{
+    width: 84%;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+}
+.food-main{
+    background: #fff3f3;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding: 0px 30px;
+}
+.food-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.food-col{
+    flex-basis: 23.2%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.food-col img{
+    width: 100%;
+    display: block;
+}
+.food h1{
+    font-size: 33px;
+    font-weight: 600;
+    padding-bottom: 50px;
+
+}
+.about{
+    width: 84%;
+     margin: auto;
+     text-align: center;
+     padding-top: 110px;
+     padding-bottom: 30px;
+}
+.about-main{
+    background: #fff3f3;
+    box-sizing: border-box;
+
+}
+.about h1{
+    font-size: 33px;
+    font-weight: 600;
+    padding-bottom: 23px;
+
+}
+.about-row{
+    margin-top: 2.3%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.about-col{
+    flex-basis: 49%;
+    overflow: hidden;
+    padding-left: 17px;
+}
+.about-col img{
+    width: 100%;
+    display: block;
+}
+.about-col p{
+    
+    text-align: justify;
+}
+.about-col h2{
+    text-align: justify;
+    padding-top: 7px ;
+    padding-bottom: 5px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+.b-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.b-btn:hover{
+    color: #fff;
+}
+.a-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.a-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+/* ------footer------- */
+.footer{
+    width: 100%;
+    text-align: center;
+    background: rgb(27, 25, 25);
+    margin-top: 40px;
+
+}
+.footer h4{
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer1{
+    width: 100%;
+    text-align: center;
+    padding-top: 45px;
+}
+.footer1 h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.icon .fa{
+    color: #f44336;
+    margin: 0 13px;
+    padding: 18px 0;
+    cursor: pointer;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+
+.subheader{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.4)), url(image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.subheader h1{
+    padding-top: 70px;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+.row2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.col2{
+    flex-basis: 22.5%;
+    background: #fff3f3;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.col2 img{
+    width: 100%;
+    display: block;
+}
+.col2 h3{
+    padding-left: 10px;
+    padding-bottom: 8px;
+    color: rgb(24, 24, 24);
+}
+.col2 a{
+    text-decoration: none;
+}
+.col2 .h51{
+    color: #777;
+   padding-left: 48px;
+   padding-top: 10px;
+   padding-bottom: 3px;
+}
+.col2 .h52{
+    color: #777;
+    padding-left: 15px;
+    padding-bottom: 7px;
+}
+.col2 p{
+    padding: 0 6px;
+    padding-bottom: 6px;
+    text-align: justify;
+}
+.col2:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.row3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+.col3{
+    flex-basis: 30.5%;
+    background: #fff3f3;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.col3 img{
+    width: 100%;
+    display: block;
+}
+.col3 h3{
+    padding-left: 10px;
+    padding-bottom: 8px;
+    color: rgb(24, 24, 24);
+}
+.col3 a{
+    text-decoration: none;
+}
+.col3 .h51{
+    color: #777;
+   padding-left: 48px;
+   padding-top: 10px;
+   padding-bottom: 3px;
+}
+.col3 .h52{
+    color: #777;
+    padding-left: 15px;
+    padding-bottom: 7px;
+}
+.col3 p{
+    padding: 0 6px;
+    padding-bottom: 6px;
+}
+
+.place-btn{
+    text-align: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.foodpge-header{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.45)), url(image/ras-malai1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.foodpge-header h1{
+    padding-top: 70px;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+.foodpge {
+    width: 80%;
+     margin: auto;
+     padding-top: 80px;
+     padding-bottom: 30px;
+}
+.foodpge h2{
+    padding-left: 31px;
+    font-size: 30;
+    font-weight: 400;
+    color: rgb(53, 51, 51);
+}
+.foodpge-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.foodpge-col{
+    flex-basis: 46.5%;
+    background: #fff3f3;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.foodpge-col img{
+    width: 100%;
+    display: block;
+}
+.foodpge-col h3{
+    padding: 5px  0px 15px 10px;
+    padding-bottom: 8px;
+    color: rgb(24, 24, 24);
+}
+.foodpge-col a{
+    text-decoration: none;
+}
+
+.foodpge-col p{
+    padding: 15px 13px;
+    text-align: justify;
+}
+.foods{
+    padding: 60px 320px 0px 320px;
+}
+
+.aboutpge{
+    width: 84%;
+     margin: auto;
+     text-align: center;
+     padding-top: 90px;
+}
+.aboutpge-col{
+    flex-basis: 50%;
+    overflow: hidden;
+    padding-left: 17px;
+}
+.aboutpge-col img{
+    width: 100%;
+    display: block;
+    height: 67vh;
+    padding-top: 71px;
+    /* padding-bottom: 15px; */
+}
+.aboutpge-col h4{
+    text-align: center;
+    color: #777;
+}
+
+.aboutpge-row{
+    margin-top: 2.3%;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+.aboutpge-col{
+    flex-basis: 49%;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.aboutpge2{
+    width: 84%;
+     margin: auto;
+     text-align: center;
+}
+.aboutpge2 p{
+    text-align: justify;
+    padding-left: 12px;
+    padding-bottom: 15px;
+}
+.aboutpge-col h2{
+    padding-top: 17px ;
+    padding-bottom: 10px;
+}
+.about-p{
+    padding-bottom: 15px;
+}
